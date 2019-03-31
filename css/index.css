@@ -1,0 +1,133 @@
+/*大容器*/
+.container{
+	width: 100%;
+	margin: 0 auto;
+	background: pink;
+	/*最大宽度*/
+	max-width: 640px;
+	/*最小宽度*/
+	min-width: 320px;
+}
+/*头部*/
+.header{
+	height: 90px;
+}
+.header>ul{
+	line-height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*输入框*/
+.header>ul>li input{
+	width: 195px;
+	height: 35px;
+	line-height: 35px;
+	background: #f7f3f7;
+	border-radius: 40px;
+	border: none;
+	padding-left: 18px;
+}
+.header>ul>li input::-webkit-input-placeholder {
+    color: #c8b7b1;
+    font-size: 18px;
+}
+.header>ul>li .icon-diandian{
+	font-size: 39px;
+}
+/*定位放大镜*/
+li.din_fang{
+	position: relative;
+}
+li.din_fang .icon-fangdajing{
+	position: absolute;
+	top: 0px;
+	right: 35px;
+	color: #d3d3d3;
+	font-size: 24px;
+}
+/*大banner图*/
+.big_banner img{
+	width: 100%;
+	display: block;
+	margin-bottom: 23px;
+}
+/*两行图标*/
+.tuBiao{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.tuBiao a{
+	width: 25%;
+	text-align: center;
+	/*margin: 0 40px;*/
+}
+.tuBiao a:nth-last-child(-n+4){
+	margin-top: 14px;
+}
+/*图标下面的字*/
+.tuBiao a p{
+	font-size: 17px;
+	color: #333333;
+	font-family: "arial";
+}
+.tuBiao a img{
+	width: 50%;
+}
+/*翻页的两条杠*/
+.two_bar{
+	margin-top: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.two_bar span{
+	display: inline-block;
+	width: 29px;
+	height: 5px;
+	background: #e31225;
+	margin-right: 14px;
+}
+.two_bar span:nth-child(2){
+	background: #e5e5e5;
+}
+/*三张图片banner*/
+.three_banner{
+	display: flex;
+	justify-content: space-between;
+}
+.three_banner a{
+	/*display: inline-block;*/
+	width: 32%;
+}
+.three_banner a img{
+	width: 100%;
+	height: 154px;
+}
+/*小banner*/
+.small_banner{
+	margin-top: 14px;
+	margin-bottom: 44px;
+}
+/*热门景点*/
+.jingDian_title{
+	display: flex;
+	/*height: 500px;*/
+	font-family: 微软雅黑;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.jingDian_title b{
+	flex: 2;
+	border-top: 1px solid #e5e5e5;
+}
+.jingDian_title span{
+	width: 100%;
+	flex: 1;
+}
+.jingDian_title span i{
+	font-style: normal;
+	width: 100%;
+	font-size: 18px;
+}
