@@ -2,7 +2,7 @@
 .container{
 	width: 100%;
 	margin: 0 auto;
-	background: pink;
+	/*background: pink;*/
 	/*最大宽度*/
 	max-width: 640px;
 	/*最小宽度*/
@@ -52,16 +52,22 @@ li.din_fang .icon-fangdajing{
 	display: block;
 	margin-bottom: 23px;
 }
+/*********************************/
 /*两行图标*/
 .tuBiao{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+/*图标的盒子*/
 .tuBiao a{
 	width: 25%;
 	text-align: center;
 	/*margin: 0 40px;*/
+}
+/*图标*/
+.tuBiao a img{
+	width: 50%;
 }
 .tuBiao a:nth-last-child(-n+4){
 	margin-top: 14px;
@@ -72,9 +78,7 @@ li.din_fang .icon-fangdajing{
 	color: #333333;
 	font-family: "arial";
 }
-.tuBiao a img{
-	width: 50%;
-}
+/*********************************/
 /*翻页的两条杠*/
 .two_bar{
 	margin-top: 20px;
@@ -91,6 +95,7 @@ li.din_fang .icon-fangdajing{
 .two_bar span:nth-child(2){
 	background: #e5e5e5;
 }
+/*********************************/
 /*三张图片banner*/
 .three_banner{
 	display: flex;
@@ -104,16 +109,19 @@ li.din_fang .icon-fangdajing{
 	width: 100%;
 	height: 154px;
 }
+/*********************************/
 /*小banner*/
 .small_banner{
 	margin-top: 14px;
 	margin-bottom: 44px;
 }
+/*********************************/
 /*热门景点*/
 .jingDian_title{
 	display: flex;
 	/*height: 500px;*/
 	font-family: 微软雅黑;
+	margin-bottom: 20px;
 	text-align: center;
 	align-items: center;
 	justify-content: space-between;
@@ -123,11 +131,162 @@ li.din_fang .icon-fangdajing{
 	border-top: 1px solid #e5e5e5;
 }
 .jingDian_title span{
-	width: 100%;
 	flex: 1;
 }
 .jingDian_title span i{
 	font-style: normal;
-	width: 100%;
 	font-size: 18px;
+}
+/*热门景点内容*/
+.jingDian_con{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+/*盒子*/
+.jingDian_con li{
+	width: 48%;
+	font-family: "微软雅黑";
+}
+/*盒子内容*/
+.jingDian_con li img{
+	width: 100%;
+	height: 162px;
+}
+/*景点标题*/
+.jingDian_con li h4,.hotel_con li h4,.pic_con li h4{
+	font-size: 19px;
+    line-height: 30px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*介绍灰色字*/
+.jingDian_con li p,.hotel_con li p{
+	font-size: 16px;
+    color: #999;
+    line-height: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*电询*/
+.jingDian_con li span{
+    line-height: 30px;
+    font-size: 19px;
+    color: #f60;
+}
+/*热门景点查看更多*/
+.jingDian_btn{
+	margin-top: 32px;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
+}
+.jingDian_btn input{
+	width: 144px;
+	height: 43px;
+	box-sizing: border-box;
+	border: 2px solid #e5e5e5;
+	border-radius: 8px;
+	font-size: 18px;
+	color: #999;
+	background: #fff;
+}
+/*********************************/
+/*热门酒店*/
+.hotel_con li{
+	position: relative;
+	margin-bottom: 15px;
+}
+.hotel_con li img{
+	width: 100%;
+	height: 260px;
+}
+/*电询*/
+.hotel_con li input{
+	position: absolute;
+	bottom: 70px;
+	left: 15px;
+	width: 60px;
+	height: 30px;
+	border-radius: 8px;
+    line-height: 30px;
+    font-size: 19px;
+    color: #fff;
+    background: #f60;
+}
+/**************************************/
+/*热门活动*/
+.jingDian_con li{
+	position: relative;
+}
+.jingDian_con li input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35%;
+	height: 13%;
+	background: #02c63c;
+	color: #fff;
+}
+/******************************************/
+/*热门相册*/
+.pic_con{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.pic_con li{
+	width: 31%;
+	margin-bottom: 15px;
+}
+.pic_con li img{
+	width: 100%;
+	height: 85%;
+}
+.pic_con li:nth-last-child(-n+3) img{
+	height: 50%;
+}
+.pic_btn{
+	margin-top: -90px;
+}
+/*******************************************/
+/*热门游记*/
+.youJi_con dl{
+	font-size: 18px;
+	color: #9a9a9a;
+	padding-bottom: 20px;
+} 
+.youJi_con dl dt{
+	float: left;
+}
+.youJi_con dl dd{
+	float: right;
+	margin-right: 25px;
+}
+/***************************/
+/*固定定位*/
+.din_phone i{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 95px;
+	font-size: 40px;
+}
+.din_phone .icon-dianhua1{
+	background: rgba(255,161,51,0.8);
+	left: 10px;
+	color: #fff;
+}
+.din_phone .icon-jiantou-copy-copy{
+	background: rgba(255,255,255,0.8);
+	right: 10px;
+	color: #a5a5a6;
+	border: 3px solid #d9d9d9;
 }
