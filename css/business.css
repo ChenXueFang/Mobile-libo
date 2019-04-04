@@ -1,11 +1,209 @@
+body{
+	background: #FFFFFF;
+	font-family: arial;
+}
 /*大容器*/
 .container{
 	width: 100%;
 	margin: 0 auto;
-	background: #fff;
+	/*background: orange;*/
 	/*最大宽度*/
 	max-width: 640px;
 	/*最小宽度*/
 	min-width: 320px;
 }
+.container>img{
+	width: 100%;
+}
 /**********************************/
+/*头部*/
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.banner{
+	margin-top: 50px;
+}
+/*******************************************/
+/*报名输入框*/
+.apply{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+.apply input{
+	width: 100%;
+	margin-bottom: 8px;
+	border: 1px solid #04a1f1;
+	padding: 10px 0 10px 10px;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.apply input[type="button"]{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 0 5px 5px;
+	color: #fff;
+	background: #04a1f1;
+}
+/**********************************************************/
+/*开公司三步*/
+.step>img{
+	width: 100%;
+}
+.step_apply{
+	width: 100%;
+	margin-top: -30px;
+	background: #ecfcfc;
+}
+.step_apply input{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+/*************************************/
+/*成立公司之后需要做什么*/
+.chengli{
+	text-align: center;
+	font-size: 20px;
+	color: #454545;
+	padding-top: 30px;
+	background: #f7f7f7;
+}
+.chengli>h2{
+	margin-bottom: 70px;
+}
+.chengli_con{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.chengli_con li{
+	width: 25%;
+	color: #4b4b4b;
+	cursor: pointer;
+}
+.chengli_con li img{
+	width: 50%;
+}
+.chengli_con li p{
+	margin-top: 30px;
+}
+/***************************************************/
+/*常见问题*/
+.problem{
+	background: #fff;
+}
+.problem_apply{
+	margin-top: -30px;
+}
+.problem_apply input{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 8px;
+}
+/*******************************************************/
+/*我们的优势*/
+#advantage_con{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#advantage_con li{
+	width: 35%;
+	padding-bottom: 50px;
+}
+#advantage_con li img{
+	width: 25%;
+}
+#advantage_con li:nth-child(3) img{
+	width: 20%;
+}
+#advantage_con p{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+#advantage_con li span{
+	display: block;
+	text-align: left;
+	font-size: 17px;
+}
+/*********************************************************/
+/*你可能还需要*/
+.maybe{
+	background: #fff;
+}
+.maybe_btn input{
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.footer{
+	display: block;
+	margin-bottom: 30px;
+}
+/*尾部定位*/
+.footer_din{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
