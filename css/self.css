@@ -1,0 +1,261 @@
+body{
+	background: #fff;
+	font-family: arial;
+}
+/*大容器*/
+.container{
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	/*最大宽度*/
+	max-width: 640px;
+	/*最小宽度*/
+	min-width: 320px;
+}
+/**********************************/
+.header{
+	/*position: fixed;
+	top: 0;
+	left: 50%;*/
+}
+.header_top{
+	line-height: 60px;
+	background: #dd3d3d;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+}
+.header_top h2{
+	font-weight: 400;
+	font-size: 26px;
+}
+/*.导航条*/
+.nav{
+	line-height: 50px;
+	display: flex;
+	font-size: 20px;
+	justify-content: space-around;
+}
+.nav a{
+	color: #968686;
+	
+}
+.nav_bor{
+	border-bottom: 2px solid #f45454;
+}
+/*banner*/
+.container>img{
+	width: 100%;
+}
+/***************************************/
+/*通知公告*/
+.notice{
+	margin-top: 25px;
+	font-size: 27px;
+	color: #000;
+}
+.notice dd,.notice dt{
+	margin-bottom: 30px;
+}
+.notice dd a{
+	width: 87%;
+	margin: 0 auto;
+	font-size: 24px;
+	color: #000;
+	display: flex;
+	justify-content: space-between;
+}
+.notice dd a span.notice_time{
+	color: #7a7a7a;
+}
+/******************************************/
+/*网格菜单*/
+.gridding{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 21px;
+}
+.gridding li{
+	width: 25%;
+	line-height: 70px;
+	border-right: 2px solid #a5a6a5;
+	box-sizing: border-box;
+}
+.gridding li:nth-last-child(-n+4){
+	border-top: 2px solid #a5a6a5;;
+}
+.gridding li:nth-child(4),.gridding li:nth-child(8){
+	border-right: none;
+}
+.gridding li a{
+	color: #525152;
+	font-weight: bold;
+}
+/*****************************************************************/
+/*推荐title*/
+.recommend_title{
+	display: flex;
+	justify-content: space-between;
+	background: #f7f3f7;
+	line-height: 70px;
+	font-size: 20px;
+}
+.recommend_title li:nth-child(1){
+	padding-left: 30px;
+}
+.recommend_title li:nth-child(2){
+	padding-right: 30px;
+}
+.recommend_title li img{
+	display: inline-block;
+	margin-top: -30px;
+}
+.recommend_title li input{
+	height: 30px;
+	line-height: 30px;
+	background: #d6d7d6;
+	padding: 0 20px;
+	border-radius: 20px;
+}
+/*************************************/
+/*学校推荐*/
+.school{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	color: #000;
+}
+.school li{
+	width: 32%;
+	text-align: center;
+	/*background: pink;*/
+	padding: 20px 0;
+	margin-bottom: 25px;
+	box-shadow: 5px 5px 10px #ddd;
+}
+.school li img{
+	width: 50%;
+}
+/*学校大名*/
+.school li h2{
+	font-size: 23px;
+	font-weight: 400;
+}
+.school li p{
+	font-size: 17px;
+	margin-bottom: 25px;
+}
+.school li a{
+	display: inline-block;
+	color: #393c31;
+	font-size: 17px;
+	padding: 10px 30px;
+	background: #ffd342;
+	border-radius: 20px;
+}
+/*********************************************/
+/*一排按钮*/
+.choose_btn{
+	height: 60px;
+	border-bottom: 2px dashed #8c8e8c;
+	margin-bottom: 30px;
+}
+.choose_btn input{
+	width: 20%;
+	height: 40px;
+	font-size: 16px;
+	margin-right: 15px;
+	background: #e7e7e7;
+	border-radius: 20px;
+}
+.choose_btn .choose_btn_red{
+	color: #fff;
+	background: #f74931;
+}
+/**************************************************/
+/*推荐专业*/
+.major li{
+	padding-top: 0;
+}
+.major li img{
+	width: 100%;
+}
+.major li h2{
+	margin: 15px 0;
+}
+/**********************************************************/
+/*新闻中心*/
+.news_btn{
+	margin-bottom: 0;
+}
+.news a{
+	width: 100%;
+	display: inline-block;
+	padding: 20px 0;
+	cursor: pointer;
+	border-bottom: 1px solid #dedfde;
+}
+.news a h2{
+	font-size: 25px;
+	font-weight: 400;
+	color: #080808;
+	margin-bottom: 10px;
+}
+.news a p{
+	font-size: 18px;
+	color: #8c8a8c;
+}
+/*****************************************************************/
+/*尾部*/
+.footer{
+	height: 80px;
+	background: #ef4d4a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #f7ebf7;
+	font-weight: 500;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.footer p{
+	font-family: "微软雅黑";
+	margin-bottom: 5px;
+}
+/*尾部定位*/
+.footer_din{
+	display: flex;
+	justify-content: space-between;
+	background: #efebef;
+	/*position: fixed;
+	bottom: 0;
+	left: 50%;*/
+}
+.footer_din li{
+	width: 25%;
+	line-height: 80px;
+	text-align: center;
+	color: #000;
+	font-family: "微软雅黑";
+	font-size: 25px;
+}
+.footer_din li.footer_din_sec{
+	color: #FFF;
+	background: #ff5552;
+}
+
+
+
+
+
+
+
+
+
+
+
+
