@@ -1,5 +1,5 @@
 body{
-	background: #f0f0f0;
+	background: #fff;
 	font-family: arial;
 }
 /*大容器*/
@@ -16,39 +16,245 @@ body{
 }
 /**********************************************/
 /*header*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+header{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 10px;
+}
+header img{
+	width: 65px;
+	height: 55px;
+}
+header .icon-xiantiao{
+	display: inline-block;
+	font-size: 40px;
+	color: #4194d3;
+	margin-top: 10px;
+	cursor: pointer;
+}
+/*******************************************/
+/*我们能做什么*/
+.doing{
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+.doing_title h1{
+	font-size: 30px;
+	color: #333;
+	margin-bottom: 10px;
+}
+.doing_title p{
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+/*我们能做什么内容*/
+.doing_con h2{
+	font-size: 20px;
+	color: #333;
+	margin: 10px 0;
+}
+.doing_con p{
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 20px;
+}
+.doing_con input{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 5px 55px;
+	border: 2px solid #f08113;
+	background: #fff;
+	color: #f5a013;
+	font-size: 14px;
+}
+/*一排标题*/
+.title{
+	background: #f4f8fb;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.title>P{
+	display: inline-block;
+	font-size: 20px;
+	padding-bottom: 15px;
+	font-family: arial;
+	color: #b3b3b3;
+	font-weight: 500;
+	border-bottom: 2px solid #ef8213;
+}
+.icon{
+	display: flex;
+	justify-content: center;
+}
+.icon li{
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+.icon-sanjiaoxing1{
+	margin: 0 20px;
+}
+.iconfont{
+	color: #b3b3b3;
+}
+/*案例图片*/
+.case{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+.case li{
+	width: 50%;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.case li .case_li_con{
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.case li .case_li_con:hover{
+	background: rgba(178,35,26,0.5);
+	transform: translateY(-100%);
+}
+.case li i{
+	font-size: 30px;
+	color: #fff;
+	z-index: 99;
+	position: absolute;
+	top: 47%;
+	left: 47%;
+}
+.case li img{
+	width: 100%;
+}
+/*************************************************/
+/*新闻咨询*/
+.construction_news{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 15px;
+}
+.construction_news li{
+	margin-top: 20px;
+	width: 48%;
+	text-align: left;
+	font-size: 14px;
+}
+.construction_news li img{
+	width: 100%;
+	cursor: pointer;
+}
+.construction_news a{
+	display: block;
+	color: #444;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 12px;
+	cursor: pointer;
+}
+.construction_news a:hover{
+	color: orange;
+}
+.construction_news p{
+	color: #9999b0;
+	line-height: 20px;
+}
+.news_btn{
+	padding: 10px 60px;
+	border: 2px solid #000;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+/*************************************************/
+/*合作伙伴*/
+.partner{
+	background: #fff;
+}
+.partner_con{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.partner_con li{
+	width: 48%;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.partner_con li img{
+	width: 100%;
+}
+/***************************************************/
+/*联系我们*/
+.contact{
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	margin: 40px 5px 0;
+	margin-bottom: -20px;
+	padding-bottom: 40px;
+	color: #333;
+	position: relative;
+}
+.contact dt{
+	font-size: 18px;
+	background: #fff;
+	padding: 0 10px;
+	position: absolute;
+	top: -12px;
+	left: 38%;
+}
+.contact dd:nth-child(2){
+	margin-top: 40px;
+}
+.contact dd{
+	font-size: 14px;
+	line-height: 24px;
+}
+/*footer*/
+footer{
+	background: #474747;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 40px 15px 15px;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+footer a,footer{
+	color: #ccccc7;
+}
+.footer_partner dt,.footer_case dt{
+	color: #b2b2b2;
+	font-size: 19px;
+	margin-bottom: 15px;
+}
+footer dl{
+	width: 48%;
+	text-align: left;
+}
+.footer_message dt{
+	font-size: 19px;
+	font-weight: bold;
+}
+footer p{
+	margin-top: 50px;
+}
+.last{
+	color: #939393;
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 0;
+}
 
 
 
