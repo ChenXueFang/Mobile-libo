@@ -342,7 +342,8 @@ footer p{
 .air_footer_din{
 	position: fixed;
 	bottom: 0;
-	left: 0;
+	min-width: 320px;
+    max-width: 640px;
 	cursor: pointer;
 }
 

@@ -16,7 +16,8 @@ body{
 	width: 100%;
 	position: fixed;
 	top: 0;
-	left: 0;
+	min-width: 320px;
+    max-width: 640px;
 }
 .header_top{
 	height: 75px;
@@ -27,6 +28,7 @@ body{
 	font-size: 37px;
 	font-weight: bold;
 	color: #fffbff;
+	background: #222222;
 }
 .header_top li img{
 	width: 80%;
