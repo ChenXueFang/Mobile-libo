@@ -14,9 +14,10 @@ body{
 }
 /**********************************/
 .header{
-	/*position: fixed;
+	position: fixed;
 	top: 0;
-	left: 50%;*/
+	left: 0;
+	width: 100%;
 }
 .header_top{
 	line-height: 60px;
@@ -31,6 +32,7 @@ body{
 }
 /*.导航条*/
 .nav{
+	background: #fff;
 	line-height: 50px;
 	display: flex;
 	font-size: 20px;
@@ -220,7 +222,7 @@ body{
 	color: #f7ebf7;
 	font-weight: 500;
 	margin-top: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 105px;
 }
 .footer p{
 	font-family: "微软雅黑";
@@ -231,9 +233,10 @@ body{
 	display: flex;
 	justify-content: space-between;
 	background: #efebef;
-	/*position: fixed;
+	position: fixed;
 	bottom: 0;
-	left: 50%;*/
+	left: 0;
+	width: 100%;
 }
 .footer_din li{
 	width: 25%;

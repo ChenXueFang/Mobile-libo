@@ -1,0 +1,216 @@
+body{
+	background: #fff;
+	font-family: arial;
+}
+/*大容器*/
+.container{
+	width: 100%;
+	margin: 0 auto;
+	/*最大宽度*/
+	max-width: 640px;
+	/*最小宽度*/
+	min-width: 320px;
+}
+.container>img{
+	width: 100%;
+}
+/**********************************************/
+/*header*/
+header{
+	display: flex;
+	justify-content: space-between;
+}
+header img:nth-child(2){
+	display: inline-block;
+	height: 37px;
+	margin-top: 15px;
+}
+/*************************************************/
+/*八个选择块*/
+.eight{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+	padding: 0 10px;
+}
+.eight li{
+	width: 24%;
+	box-sizing: border-box;
+}
+.eight li a{
+	width: 100%;
+	color: #fff;
+	background: #546fb4;
+	font-size: 16px;
+	padding: 10px 0;
+	margin-top: 5px;
+	display: inline-block;
+}
+/************************************************/
+/*title*/
+.title{
+	text-align: center;
+    height: 67px;
+    font-weight: 500;
+    border: 2px solid #000;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 10%;
+    border-right: none;
+    border-top: none;
+    position: relative;
+    margin-top: 30px;
+}
+.title b{
+	width: 32%;
+    display: block;
+    height: 1px;
+    border-top: 2px solid #000;
+    position: absolute;
+    left: 0;
+}
+.title p{
+	font-size: 20px;
+	color: #8f918f;
+	margin-bottom: 8px;
+}
+.title span{
+	font-size: 12px;
+	color: #ef0f34;
+}
+/*加号*/
+.fuhai_jia{
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 15px;
+}
+/***********************************************/
+/*产品服务*/
+.service{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 18px;
+	color: #4e5252;
+	text-align: center;
+}
+.service li{
+	width: 46%;
+	cursor: pointer;
+}
+.service li img{
+	width: 100%;
+}
+.service li p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*成功案例*/
+.success{
+	font-size: 16px;
+}
+.success p{
+	height: 20px;
+	overflow: hidden;
+}
+/******************************************************/
+/*公司介绍*/
+.company img{
+	width: 100%;
+}
+.company p{
+	font-size: 16px;
+	text-indent: 85px;
+	color: #4e5252;
+	line-height: 30px;
+}
+.company p a{
+	color: #0000ee;
+}
+/*********************************************************/
+/*新闻中心*/
+.fuhai_news li{
+	display: flex;
+	justify-content: space-between;
+	line-height: 49px;
+	border-bottom: 1px dashed #e2e2e2;
+}
+.fuhai_news li p{
+	font-size: 15px;
+	color: #292929;
+	cursor: pointer;
+}
+.fuhai_news li i{
+	color: #5471b7;
+	font-size: 10px;
+}
+.fuhai_news li span{
+	color: #b0b0b0;
+}
+/*************************************************************/
+/*联系我们*/
+.call{
+	display: flex;
+	justify-content: space-between;
+	color: #4e5252;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 30px;
+}
+.call div,.call ul{
+	width: 48%;
+}
+.call img{
+	width: 100%;
+}
+/*尾部*/
+footer{
+	background: #232323;
+	color: #d7d7d7;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-bottom: 65px;
+}
+footer .big_footer{
+	width: 20px;
+}
+/*尾部固定*/
+.footer_din{
+	background: #221e1f;
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.footer_din a{
+	color: #dbf1cd;
+}
+.footer_din img{
+	width: 32px;
+	height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

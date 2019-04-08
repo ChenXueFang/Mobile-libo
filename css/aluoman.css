@@ -12,6 +12,12 @@ body{
 	min-width: 320px;
 }
 /*头部*/
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
 .header_top{
 	height: 75px;
 	background: #000;
@@ -30,6 +36,7 @@ body{
 }
 /*导航条*/
 .nav{
+	background: #fff;
 	font-size: 23px;
 	display: flex;
 	justify-content: space-between;
