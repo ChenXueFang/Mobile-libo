@@ -1,5 +1,5 @@
 body{
-	background: #eeeeee;
+	background: #000;
 	font-family: arial;
 }
 /*大容器*/
@@ -10,9 +10,346 @@ body{
 	max-width: 640px;
 	/*最小宽度*/
 	min-width: 320px;
+	background: #fff;
 }
 .container>img{
 	width: 100%;
 }
 /**********************************************/
 /*header*/
+.header{
+	height: 10px;
+	background: #0657a9;
+}
+header{
+	display: flex;
+	height: 80px;
+	line-height: 80px;
+	justify-content: center;
+	background: #fff;
+	font-size: 40px;
+	color: #0657a9;
+}
+/*导航条*/
+.nav{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 30px;
+}
+.nav li{
+	width: 25%;
+	margin-top: 40px;
+}
+.nav li p{
+	font-size: 24px;
+	color: #333;
+	margin-top: 25px;
+}
+/************************************************/
+/*公司简介*/
+.introduce_title{
+	font-size: 30px;
+	padding: 0 10px;
+	color: #000;
+	line-height: 80px;
+	background: #f2f2f2;
+}
+.introduce p{
+	background: #fff;
+	font-size: 24px;
+	color: #666;
+	padding: 20px 20px;
+	text-indent: 60px;
+	line-height: 37px;
+}
+/********************************************/
+/*套餐*/
+.combo{
+	background: #5754ff;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 40px;
+}
+.combo b{
+	font-size: 30px;
+	display: inline-block;
+	margin: 90px 0 15px;
+}
+.combo p{
+	margin-bottom: 20px;
+}
+.combo_pro{
+	display: flex;
+	justify-content: space-around;
+}
+.combo_pro img{
+	width: 45%;
+	height: auto;
+}
+/****************************************************/
+/*服务*/
+.service{
+	background: #f2f3f5;
+	text-align: center;
+	color: #666666;
+}
+.service>b{
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+.service>p{
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+/*服务内容*/
+.service_con{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+	padding: 0 15px;
+}
+.service_con li{
+	width: 49%;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.service_con img{
+	display: inline-block;
+	width: 40%;
+}
+.service_con b{
+	display: block;
+	font-size: 30px;
+	margin: 10px 0;
+}
+.service_con p{
+	font-size: 25px;
+	margin: 10px 0;
+	text-indent: 25px;
+	text-align: left;
+}
+/****************************************/
+/*案例展示*/
+.display{
+	text-align: center;
+	background: #4b28c8;
+	color: #fff;
+	padding-bottom: 30px;
+}
+.display b{
+	margin-top: 60px;
+	display: inline-block;
+	font-size: 35px;
+}
+.display span{
+	display: block;
+	font-size: 20px;
+	margin: 10px 0;
+}
+.display p{
+	font-size: 25px;
+	padding: 0 48px;
+	line-height: 40px;
+	margin-bottom: 50px;
+}
+.display img{
+	width: 100%;
+}
+/*********************************************/
+/*新闻图片*/
+.qianshang_news{
+	padding: 15px;
+}
+.qianshang_news img{
+	width: 100%;
+}
+/*新闻内容*/
+.news_con{
+	padding-bottom: 20px;
+}
+.news{
+	border-top: 1px solid #ececec;
+	padding: 0 15px;
+	cursor: pointer;
+}
+/*新闻上部分*/
+.news_top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.news_top img{
+	width: 51px;
+	height: 51px;
+}
+.news_top p{
+	font-size: 25px;
+	color: #333;
+	font-family: "微软雅黑";
+}
+.news>p{
+	font-size: 20px;
+	color: #b0b0b0;
+	margin: 20px 0;
+}
+/*金牌*/
+.pai>img{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+/****************************************************/
+/*联系我们*/
+.call_me{
+	background: #9f56ff;
+	font-size: 25px;
+	color: #fff;
+	padding: 60px 0 15px 20px;
+}
+.call_me li{
+	margin-bottom:15px;
+}
+/*top*/
+.top{
+	line-height: 50px;
+	background: #0657a9;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: right;
+}
+.top a{
+	color: #fff;
+}
+footer{
+	text-align: center;
+	color: #a2a2a2;
+	line-height: 90px;
+	font-size: 25px;
+	margin-bottom: 100px;
+}
+/**********************************************/
+/*固定尾部*/
+.footer_din{
+	background: #0657a9;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	height: 99px;
+	position: fixed;
+	bottom: 0;
+	max-width: 640px;
+	min-width: 320px;
+	width: 100%;
+}
+.footer_din li{
+	cursor: pointer;
+}
+.footer_din i{
+	font-size: 40px;
+}
+.footer_din p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+/*左侧固定定位*/
+.left_din{
+	background: #0657a9;
+	/*max-width: 640px;
+	min-width: 320px;*/
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	bottom: 160px;
+	/*left: 20px;*/
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.left_din .icon-xiantiao{
+	color: #fff;
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
